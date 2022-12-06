@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "audiofour",
+    "name": "Magus Audio",
     "slug": "audiofour",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,16 +18,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      },
+      "bundleIdentifier": "com.crolmabutol.audiofour"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/splash.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7467d02a-8b90-46d4-adea-55220bfb6ba8"
+      }
     }
   }
 }
